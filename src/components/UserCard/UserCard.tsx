@@ -30,7 +30,7 @@ export default function UserCard({ name, avatarUrl, date, slug }: UserCardProps)
             <button
                 className="px-4 py-1 text-sm border text-gray-800 rounded-full hover:bg-gray-700 hover:text-white hover:cursor-pointer transition"
             >
-                Follow
+                Seguir
             </button>
         </div>
     );
