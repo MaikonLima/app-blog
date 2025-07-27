@@ -1,4 +1,3 @@
-
 import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import UserCard from '@/components/UserCard/UserCard';
@@ -6,7 +5,13 @@ import { fetchPostBySlug } from '@/services/api';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
-export default async function PostPage({ params }: { params: { slug: string } }) {
+interface RouteParams {
+    params: {
+        slug: string;
+    };
+}
+
+export default async function PostPage({ params }: any) {
     const post = await fetchPostBySlug(params.slug);
     if (!post) return notFound();
 

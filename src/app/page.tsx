@@ -25,7 +25,7 @@ export default function Home() {
 
   useEffect(() => {
     loadPosts(page);
-  }, []);
+  }, [page]);
 
   async function loadPosts(currentPage: number) {
     setIsLoading(true);
