@@ -15,6 +15,8 @@ export default async function PostPage({ params }: any) {
     const post = await fetchPostBySlug(params.slug);
     if (!post) return notFound();
 
+
+    
     return (
         <>
             <Header />

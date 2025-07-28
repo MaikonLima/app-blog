@@ -25,3 +25,9 @@ body {
   background-color: #ffffff;
   -webkit-print-color-adjust: exact;
 }
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 2rem;
+}

@@ -33,7 +33,7 @@ export default function PostCard({ title, imageUrl, slug }: PostCardProps) {
 
                 <h2
                     className="post-card__title font-extrabold text-xl text-gray-800 text-center mt-3"
-                    dangerouslySetInnerHTML={{ __html: title.toUpperCase() }}
+                    dangerouslySetInnerHTML={{ __html: title }}
                 />
             </Link>
         </div>
